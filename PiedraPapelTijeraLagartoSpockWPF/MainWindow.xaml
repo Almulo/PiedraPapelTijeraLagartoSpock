@@ -1,0 +1,191 @@
+﻿<Window x:Class="PiedraPapelTijeraLagartoSpockWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PiedraPapelTijeraLagartoSpockWPF"
+        xmlns:helpers="clr-namespace:PiedraPapelTijeraLagartoSpockWPF.Helpers"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        Title="MainWindow" SizeToContent="WidthAndHeight">
+    <Window.Resources>
+        <Style x:Key="OpcionEllipse"
+               TargetType="Ellipse">
+            <Setter Property="Fill" Value="#01FFFFFF" />
+            <Setter Property="Height" Value="64" />
+            <Setter Property="Width" Value="64" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Fill" Value="#99FFFFFF" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="OponenteEllipse"
+               TargetType="Ellipse">
+            <Setter Property="Stroke" Value="#DDFF6666" />
+            <Setter Property="StrokeThickness" Value="4" />
+            <Setter Property="Height" Value="72" />
+            <Setter Property="Width" Value="72" />
+        </Style>
+
+        <Style x:Key="JugadorEllipse"
+               TargetType="Ellipse">
+            <Setter Property="Fill" Value="#996666FF" />
+            <Setter Property="Height" Value="64" />
+            <Setter Property="Width" Value="64" />
+        </Style>
+
+        <Style x:Key="ResultadoTextBlock"
+               TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Resultado}" Value="Empate">
+                    <Setter Property="Foreground" Value="Goldenrod" />
+                    <Setter Property="Text" Value="Empate" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Resultado}" Value="Derrota">
+                    <Setter Property="Foreground" Value="Red" />
+                    <Setter Property="Text" Value="Derrota" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Resultado}" Value="Victoria">
+                    <Setter Property="Foreground" Value="Green" />
+                    <Setter Property="Text" Value="Victoria" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="ReiniciarButton"
+               TargetType="Rectangle">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Width" Value="70" />
+            <Setter Property="Margin" Value="10,5" />
+            <Setter Property="Fill">
+                <Setter.Value>
+                    <VisualBrush>
+                        <VisualBrush.Visual>
+                            <Grid Background="Black">
+                                <TextBlock Text="Reiniciar"
+                                           Margin="10,3"
+                                           Foreground="White"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center" />
+                            </Grid>
+                        </VisualBrush.Visual>
+                    </VisualBrush>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Fill">
+                        <Setter.Value>
+                            <VisualBrush>
+                                <VisualBrush.Visual>
+                                    <Grid Background="DimGray">
+                                        <TextBlock Text="Reiniciar"
+                                                   Margin="10,3"
+                                                   Foreground="White"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center" />
+                                    </Grid>
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <BooleanToVisibilityConverter x:Key="BooleanVisibilityConverter" />
+        <helpers:JugadaVisibilityConverter x:Key="JugadaVisibilityConverter" />
+    </Window.Resources>
+    <Grid>
+        <Canvas Height="265"
+                Width="300"
+                IsEnabled="{Binding Jugando}">
+            <Image Source="Resources/sp.png"
+                   Height="265"
+                   Width="300" />
+            <Ellipse x:Name="SpockPC" Style="{StaticResource OponenteEllipse}"
+                     Visibility="{Binding JugadaPC, Converter={StaticResource JugadaVisibilityConverter}, ConverterParameter=Spock}"
+                     Canvas.Left="41" 
+                     Canvas.Top="80"/>
+            <Ellipse x:Name="PiedraPC" Style="{StaticResource OponenteEllipse}"
+                     Visibility="{Binding JugadaPC, Converter={StaticResource JugadaVisibilityConverter}, ConverterParameter=Piedra}"
+                     Canvas.Left="115" 
+                     Canvas.Top="25"/>
+            <Ellipse x:Name="LagartoPC" Style="{StaticResource OponenteEllipse}"
+                     Visibility="{Binding JugadaPC, Converter={StaticResource JugadaVisibilityConverter}, ConverterParameter=Lagarto}"
+                     Canvas.Left="69" 
+                     Canvas.Top="168"/>
+            <Ellipse x:Name="PapelPC" Style="{StaticResource OponenteEllipse}"
+                     Visibility="{Binding JugadaPC, Converter={StaticResource JugadaVisibilityConverter}, ConverterParameter=Papel}"
+                     Canvas.Left="189" 
+                     Canvas.Top="80"/>
+            <Ellipse x:Name="TijeraPC" Style="{StaticResource OponenteEllipse}"
+                     Visibility="{Binding JugadaPC, Converter={StaticResource JugadaVisibilityConverter}, ConverterParameter=Tijera}"
+                     Canvas.Left="163" 
+                     Canvas.Top="168"/>
+            <Ellipse x:Name="SpockJugador" Style="{StaticResource JugadorEllipse}"
+                     Visibility="{Binding JugadaJugador, Converter={StaticResource JugadaVisibilityConverter}, ConverterParameter=Spock}"
+                     Canvas.Left="46" 
+                     Canvas.Top="84"/>
+            <Ellipse x:Name="PiedraJugador" Style="{StaticResource JugadorEllipse}"
+                     Visibility="{Binding JugadaJugador, Converter={StaticResource JugadaVisibilityConverter}, ConverterParameter=Piedra}"
+                     Canvas.Left="119" 
+                     Canvas.Top="29"/>
+            <Ellipse x:Name="LagartoJugador" Style="{StaticResource JugadorEllipse}"
+                     Visibility="{Binding JugadaJugador, Converter={StaticResource JugadaVisibilityConverter}, ConverterParameter=Lagarto}"
+                     Canvas.Left="73" 
+                     Canvas.Top="172"/>
+            <Ellipse x:Name="PapelJugador" Style="{StaticResource JugadorEllipse}"
+                     Visibility="{Binding JugadaJugador, Converter={StaticResource JugadaVisibilityConverter}, ConverterParameter=Papel}"
+                     Canvas.Left="192" 
+                     Canvas.Top="84"/>
+            <Ellipse x:Name="TijeraJugador" Style="{StaticResource JugadorEllipse}"
+                     Visibility="{Binding JugadaJugador, Converter={StaticResource JugadaVisibilityConverter}, ConverterParameter=Tijera}"
+                     Canvas.Left="166" 
+                     Canvas.Top="172"/>
+            <Ellipse x:Name="Spock" Style="{StaticResource OpcionEllipse}"
+                     MouseLeftButtonUp="Spock_MouseLeftButtonUp"
+                     Canvas.Left="46" 
+                     Canvas.Top="84"/>
+            <Ellipse x:Name="Piedra" Style="{StaticResource OpcionEllipse}"
+                     MouseLeftButtonUp="Piedra_MouseLeftButtonUp"
+                     Canvas.Left="119" 
+                     Canvas.Top="29"/>
+            <Ellipse x:Name="Lagarto" Style="{StaticResource OpcionEllipse}"
+                     MouseLeftButtonUp="Lagarto_MouseLeftButtonUp"
+                     Canvas.Left="73" 
+                     Canvas.Top="172"/>
+            <Ellipse x:Name="Papel" Style="{StaticResource OpcionEllipse}"
+                     MouseLeftButtonUp="Papel_MouseLeftButtonUp"
+                     Canvas.Left="192" 
+                     Canvas.Top="84"/>
+            <Ellipse x:Name="Tijera" Style="{StaticResource OpcionEllipse}"
+                     MouseLeftButtonUp="Tijera_MouseLeftButtonUp"
+                     Canvas.Left="166" 
+                     Canvas.Top="172"/>
+        </Canvas>
+
+        <Grid VerticalAlignment="Center"
+              HorizontalAlignment="Center"
+              Background="White"
+              Visibility="{Binding NoJugando, Converter={StaticResource BooleanVisibilityConverter}}">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <TextBlock Style="{StaticResource ResultadoTextBlock}" />
+            <Rectangle Name="Reiniciar"
+                       Grid.Row="1"
+                       Style="{StaticResource ReiniciarButton}"
+                       MouseLeftButtonUp="Reiniciar_MouseLeftButtonUp" />
+        </Grid>
+    </Grid>
+</Window>
