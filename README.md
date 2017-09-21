@@ -4,6 +4,9 @@ A small version of Rock Paper Scissors Lizard Spock with a cute WPF frontend, fo
 There are a few spanish words all over the project, but I think all you should know to understand the code itself is:
 
 Piedra = Rock
+
 Papel = Paper
+
 Tijera = Scissors
+
 Lagarto = Lizard
