@@ -1,0 +1,11 @@
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2.Test\obj\Debug\PiedraPapelTijeraLagartoSpock2.Test.csprojResolveAssemblyReference.cache
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2.Test\bin\Debug\PiedraPapelTijeraLagartoSpock2.Test.dll
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2.Test\bin\Debug\PiedraPapelTijeraLagartoSpock2.Test.pdb
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2.Test\bin\Debug\PiedraPapelTijeraLagartoSpock2.dll
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2.Test\bin\Debug\PiedraPapelTijeraLagartoSpock2.pdb
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2.Test\obj\Debug\PiedraPapelTijeraLagartoSpock2.Test.dll
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2.Test\obj\Debug\PiedraPapelTijeraLagartoSpock2.Test.pdb
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2.Test\bin\Debug\PiedraPapelTijeraLagartoSpock.Base.dll
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2.Test\bin\Debug\PiedraPapelTijeraLagartoSpock.Base.pdb

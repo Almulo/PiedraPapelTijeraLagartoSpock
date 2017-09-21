@@ -1,0 +1,7 @@
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2\obj\Debug\PiedraPapelTijeraLagartoSpock2.csprojResolveAssemblyReference.cache
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2\bin\Debug\PiedraPapelTijeraLagartoSpock2.dll
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2\bin\Debug\PiedraPapelTijeraLagartoSpock2.pdb
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2\obj\Debug\PiedraPapelTijeraLagartoSpock2.dll
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2\obj\Debug\PiedraPapelTijeraLagartoSpock2.pdb
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2\bin\Debug\PiedraPapelTijeraLagartoSpock.Base.dll
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpock2\bin\Debug\PiedraPapelTijeraLagartoSpock.Base.pdb

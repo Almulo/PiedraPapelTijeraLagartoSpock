@@ -1,0 +1,5 @@
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpockBase\bin\Debug\PiedraPapelTijeraLagartoSpockBase.dll
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpockBase\bin\Debug\PiedraPapelTijeraLagartoSpockBase.pdb
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpockBase\obj\Debug\PiedraPapelTijeraLagartoSpockBase.csprojResolveAssemblyReference.cache
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpockBase\obj\Debug\PiedraPapelTijeraLagartoSpockBase.dll
+C:\Users\amunizl\documents\visual studio 2015\Projects\PiedraPapelTijeraLagartoSpock\PiedraPapelTijeraLagartoSpockBase\obj\Debug\PiedraPapelTijeraLagartoSpockBase.pdb
